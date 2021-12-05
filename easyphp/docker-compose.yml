@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  php:
+    image: php:5.4-apache
+    container_name: easyphp
+    ports:
+      - "8004:80"
+    volumes:
+      - ./www:/var/www/html

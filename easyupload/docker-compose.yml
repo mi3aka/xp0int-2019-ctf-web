@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  php:
+    build: ./env
+    container_name: easyupload
+    ports:
+      - "8006:80"
+    volumes:
+      - ./www:/var/www/html
